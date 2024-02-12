@@ -1,37 +1,32 @@
 @use '../../foundation/module';
 @use '../../foundation/mixin';
 
-.p-about{
+.p-about {
     background-color: module.$border;
 }
-.p-about__inner{
+.p-about__inner {
     padding: 40px 16px;
-    margin:  auto;
+    margin: auto;
     @include module.mixin-mq(pc) {
         max-width: 1200px;
         padding: 40px 40px;
     }
 }
 
-.p-aboutContent{
+.p-aboutContent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    @include module.mixin-mq(pc) {
+        justify-content: flex-start;
+    }
 }
-.p-aboutContentImage{
+.p-aboutContentImage {
     width: 240px;
     & img {
         width: 100%;
     }
-}
-.p-aboutContentItem{}
-.p-aboutContentItem__text{}
-.p-aboutContentItem__list{
-    list-style-type: none;
-    display: flex;
-}
-.p-aboutContentItem__listItem{
-    width: 24px;
-    & img {
-        width: 100%;
+    @include module.mixin-mq(pc) {
+        margin-right: 24px;
     }
 }

@@ -6,14 +6,12 @@
         <div class="p-aboutContentImage">
           <img :src="getImageUrl('about-image.png')" alt="" />
         </div>
-        <div class="p-aboutContentItem">
-          <p class="p-aboutContentItem__text">
-            竹内<br />
-            デザインとフロントエンドがんばります。<br />
-            スプラビッグラン上位5%はいれます。<br />
-            このtakeyo-projectsは、docker/nginx/vite/vue-routerを使用して作成した。
-          </p>
-        </div>
+        <p class="p-aboutContentText">
+          竹内<br />
+          デザインとフロントエンドがんばります。<br />
+          スプラビッグラン上位5%はいれます。<br />
+          このtakeyo-projectsは、docker/nginx/vite/vue-routerを使用して作成しました。
+        </p>
       </div>
     </div>
   </div>
