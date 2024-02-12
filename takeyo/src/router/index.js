@@ -10,24 +10,29 @@ const router = createRouter({
             component: TopView,
         },
         {
-            path: "/work01",
-            name: "work01",
+            path: "/web",
+            name: "web",
             component: () => import("../views/Work01View.vue"),
         },
         {
-            path: "/work02",
-            name: "work02",
+            path: "/shikikakuijou",
+            name: "shikikakuijou",
             component: () => import("../views/Work02View.vue"),
         },
         {
-            path: "/work03",
-            name: "work03",
+            path: "/poster",
+            name: "poster",
             component: () => import("../views/Work03View.vue"),
         },
         {
-            path: "/work04",
-            name: "work04",
+            path: "/graphic",
+            name: "graphic",
             component: () => import("../views/Work04View.vue"),
+        },
+        {
+            path: "/lp",
+            name: "lp",
+            component: () => import("../views/Work05View.vue"),
         },
     ],
 });
