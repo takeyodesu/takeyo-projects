@@ -1,0 +1,15 @@
+@charset "utf-8";
+@use '../foundation/module';
+@use '../foundation/mixin';
+
+body {
+    background-color: module.$back-ground;
+}
+.l-content {
+    padding: 40px 0 0;
+    margin: auto;
+    @include module.mixin-mq(pc) {
+        max-width: 1200px;
+        padding: 40px 40px 0;
+    }
+}

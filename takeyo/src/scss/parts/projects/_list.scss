@@ -1,0 +1,24 @@
+@use '../../foundation/module';
+@use '../../foundation/mixin';
+
+.p-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.p-listItem {
+    list-style-type: none;
+}
+.p-listItem__image {
+    & img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+    }
+}
+.p-listItem__title {
+    font-weight: bold;
+    color: module.$txt;
+}

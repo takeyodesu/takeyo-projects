@@ -1,0 +1,27 @@
+version: "3"
+services:
+  nginx-app:
+    container_name: takeyo-container
+    hostname: takeyo-container
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+    ports:
+      - "${APP_PORT}:80"
+      # - '${APP_PORT}:8099'
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./takeyo:/usr/share/nginx/html
+    depends_on:
+      - node_container
+
+  node_container:
+    container_name: node_container
+    image: node:latest
+    working_dir: /usr/share/nginx/html
+    volumes:
+      - ./takeyo:/usr/share/nginx/html
