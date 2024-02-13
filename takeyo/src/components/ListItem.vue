@@ -1,11 +1,7 @@
 <template>
-  <li class="p-listItem">
-    <div class="p-listItem__image">
-      <img :src="image" alt="" />
-    </div>
+  <img :src="image" alt="" />
 
-    <div class="p-listItem__title">{{ title }}</div>
-  </li>
+  <div class="p-listItem__title">{{ title }}</div>
 </template>
 
 <script>

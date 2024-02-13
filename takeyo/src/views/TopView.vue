@@ -2,25 +2,25 @@
   <section>
     <h2>works</h2>
     <div class="p-list">
-      <RouterLink to="/web">
+      <RouterLink to="/web" class="p-listItem">
         <ListItem :image="getImageUrl('01-01.png')" title="WEBアプリ"></ListItem
       ></RouterLink>
-      <RouterLink to="/shikikakuijou">
+      <RouterLink to="/shikikakuijou" class="p-listItem">
         <ListItem :image="getImageUrl('02-01.png')" title="色覚異常"></ListItem>
       </RouterLink>
-      <RouterLink to="/poster">
+      <RouterLink to="/poster" class="p-listItem">
         <ListItem
           :image="getImageUrl('03-01.png')"
           title="映画ポスター"
         ></ListItem>
       </RouterLink>
-      <RouterLink to="/graphic">
+      <RouterLink to="/graphic" class="p-listItem">
         <ListItem
           :image="getImageUrl('04-01.png')"
           title="グラフィック"
         ></ListItem>
       </RouterLink>
-      <RouterLink to="/lp">
+      <RouterLink to="/lp" class="p-listItem">
         <ListItem
           :image="getImageUrl('05-01.png')"
           title="動物病院LP"
