@@ -8,7 +8,7 @@
         "build": "vite build",
         "watch": "BUILD_MODE=watch vite build --watch",
         "preview": "vite preview",
-        "deploy": "npm run dev && gh-pages -d dist -e \"takeyo-projects\""
+        "deploy": "npm run dev --mode=production && gh-pages -d dist -e \"takeyo-projects\""
     },
     "dependencies": {
         "vue": "^3.4.15",
