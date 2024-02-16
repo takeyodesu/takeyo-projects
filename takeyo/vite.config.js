@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => {
     plugins: [vue()],
     resolve: {
         extensions: [".vue", ".js", ".scss"],
@@ -15,5 +15,5 @@ export default defineConfig({
     build: {
         outDir: "./dist",
     },
-    base: "/takeyo-projects/",
+    base: mode === "development" ? "./" : "/takeyo-projects/",
 });
