@@ -4,11 +4,11 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite build",
+        "dev": "vite build --mode=development",
         "build": "vite build",
         "watch": "BUILD_MODE=watch vite build --watch",
         "preview": "vite preview",
-        "deploy": "npm run dev --mode=production && gh-pages -d dist"
+        "deploy": "vite build --mode=production && gh-pages -d dist"
     },
     "dependencies": {
         "vue": "^3.4.15",
