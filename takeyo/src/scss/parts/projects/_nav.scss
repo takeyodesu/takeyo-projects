@@ -2,11 +2,12 @@
 @use '../../foundation/mixin';
 
 .p-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 40px;
-    & a {
-        color: module.$txt;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 40px;
+  & a {
+    color: module.$txt;
+  }
 }
