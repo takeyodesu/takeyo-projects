@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y \
     git
 
 RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -
-RUN git config --global user.name "ユーザー名"
-RUN git config --global user.email "メールアドレス"
+RUN git config --global user.name "takeyodesu"
+RUN git config --global user.email "takeyodesu@gmail.com"
 RUN apt-get install -y nodejs
 
 RUN rm /etc/nginx/conf.d/default.conf
