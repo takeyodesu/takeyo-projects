@@ -1,0 +1,12 @@
+@use '../../foundation/module';
+@use '../../foundation/mixin';
+
+.p-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 40px;
+    & a {
+        color: module.$txt;
+    }
+}
