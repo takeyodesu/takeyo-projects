@@ -2,31 +2,31 @@
 @use '../../foundation/mixin';
 
 .p-about {
-    background-color: module.$border;
+  background-color: module.$LightGray;
 }
 .p-about__inner {
-    padding: 40px 16px;
-    margin: auto;
-    @include module.mixin-mq(pc) {
-        max-width: 1200px;
-        padding: 40px 40px;
-    }
+  padding: 40px 16px;
+  margin: auto;
+  @include module.mixin-mq(pc) {
+    max-width: 1200px;
+    padding: 40px 40px;
+  }
 }
 
 .p-aboutContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @include module.mixin-mq(pc) {
-        justify-content: flex-start;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include module.mixin-mq(pc) {
+    justify-content: flex-start;
+  }
 }
 .p-aboutContentImage {
-    width: 240px;
-    & img {
-        width: 100%;
-    }
-    @include module.mixin-mq(pc) {
-        margin-right: 24px;
-    }
+  width: 240px;
+  & img {
+    width: 100%;
+  }
+  @include module.mixin-mq(pc) {
+    margin-right: 24px;
+  }
 }

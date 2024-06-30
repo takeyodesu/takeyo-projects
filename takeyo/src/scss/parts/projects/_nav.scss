@@ -1,13 +1,35 @@
 @use '../../foundation/module';
 @use '../../foundation/mixin';
 
+.p-nav-container {
+  position: fixed;
+  width: 100vw;
+  height: 56px;
+  display: block;
+  overflow-x: scroll;
+  @include module.mixin-mq(pc) {
+    position: static;
+    margin-bottom: 40px;
+    width: auto;
+  }
+}
 .p-nav {
+  background-color: module.$Black;
+  padding: 16px;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 16px;
+  @include module.mixin-mq(pc) {
+    background-color: module.$White;
+    gap: 24px;
+    padding: 0;
+  }
   & a {
-    color: module.$txt;
+    color: module.$White;
+    text-decoration-line: none;
+    @include module.mixin-mq(pc) {
+      color: module.$Black;
+    }
   }
 }

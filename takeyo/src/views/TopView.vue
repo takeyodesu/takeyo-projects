@@ -1,9 +1,15 @@
 <template>
   <section>
+    <div class="p-mv u-sp">
+      <img :src="getImageUrl('800x800.png')" />
+    </div>
     <h2>works</h2>
     <div class="p-list">
       <RouterLink to="/web" class="p-listItem">
-        <ListItem :image="getImageUrl('01-01.png')" title="WEBアプリ"></ListItem
+        <ListItem
+          :image="getImageUrl('01-01.png')"
+          title="紙面ビューアーWEBアプリ"
+        ></ListItem
       ></RouterLink>
       <RouterLink to="/shikikakuijou" class="p-listItem">
         <ListItem :image="getImageUrl('02-01.png')" title="色覚異常"></ListItem>

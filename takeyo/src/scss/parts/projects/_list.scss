@@ -5,14 +5,14 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 40px;
+  gap: 128px;
+  margin-bottom: 128px;
   @include module.mixin-mq(pc) {
     gap: 24px;
   }
   & a {
     text-decoration-line: none;
-    width: calc(50% - 8px);
+    width: 100%;
     @include module.mixin-mq(pc) {
       width: calc(24% - 12px);
     }
@@ -27,13 +27,20 @@
 .p-listItem {
   & img {
     width: 100%;
-    height: 160px;
+    height: 300px;
     object-fit: cover;
     pointer-events: none;
+    @include module.mixin-mq(pc) {
+      height: 160px;
+    }
   }
 }
 .p-listItem__title {
   display: inline-block;
+  font-size: 24px;
   font-weight: bold;
-  color: module.$txt;
+  color: module.$Black;
+  @include module.mixin-mq(pc) {
+    font-size: 16px;
+  }
 }

@@ -5,6 +5,9 @@
 @use './parts/projects/list';
 @use './parts/projects/about';
 @use './parts/projects/nav';
+@use './parts/projects/info';
+@use './parts/projects/mv';
 
 @use './layout/content';
 @use './pages/work';
+@use './utility/utils';

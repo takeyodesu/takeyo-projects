@@ -1,0 +1,14 @@
+@use '../foundation/module';
+@use '../foundation/mixin';
+
+.u-sp {
+  @include module.mixin-mq(pc) {
+    display: none;
+  }
+}
+.u-pc {
+  display: none;
+  @include module.mixin-mq(pc) {
+    display: block;
+  }
+}

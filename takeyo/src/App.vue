@@ -1,12 +1,14 @@
 <template>
   <main class="l-content">
-    <div class="p-nav">
-      <RouterLink to="/">TOP</RouterLink>
-      <RouterLink to="/web">WEBアプリ</RouterLink>
-      <RouterLink to="/shikikakuijou">色覚異常</RouterLink>
-      <RouterLink to="/poster">映画ポスター</RouterLink>
-      <RouterLink to="/graphic">グラフィック</RouterLink>
-      <RouterLink to="/lp">動物病院LP</RouterLink>
+    <div class="p-nav-container">
+      <div class="p-nav">
+        <RouterLink to="/">TOP</RouterLink>
+        <RouterLink to="/web">WEBアプリ</RouterLink>
+        <RouterLink to="/shikikakuijou">色覚異常</RouterLink>
+        <RouterLink to="/poster">映画ポスター</RouterLink>
+        <RouterLink to="/graphic">グラフィック</RouterLink>
+        <RouterLink to="/lp">動物病院LP</RouterLink>
+      </div>
     </div>
     <RouterView />
   </main>

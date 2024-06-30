@@ -1,0 +1,13 @@
+@use '../../foundation/module';
+@use '../../foundation/mixin';
+
+.p-info {
+  width: 100%;
+  margin-bottom: 160px;
+  @include module.mixin-mq(pc) {
+    margin-bottom: 80px;
+  }
+  & img {
+    width: 100%;
+  }
+}
