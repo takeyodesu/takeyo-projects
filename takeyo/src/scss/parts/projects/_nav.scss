@@ -3,14 +3,26 @@
 
 .p-nav-container {
   position: fixed;
-  width: 100vw;
-  height: 56px;
+  top: 0;
+  right: 0;
   display: block;
   overflow-x: scroll;
   @include module.mixin-mq(pc) {
     position: static;
     margin-bottom: 40px;
     width: auto;
+  }
+  .p-navBtn {
+    background-color: module.$Black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 .p-nav {
