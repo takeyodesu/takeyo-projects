@@ -1,40 +1,45 @@
 <template>
-  <section>
+  <div>
     <div class="p-mv u-sp">
       <img :src="getImageUrl('800x800.png')" />
     </div>
-    <h2>works</h2>
-    <div class="p-list">
-      <RouterLink to="/web" class="p-listItem">
-        <ListItem
-          :image="getImageUrl('01-01.png')"
-          title="紙面ビューアーWEBアプリ"
-        ></ListItem
-      ></RouterLink>
-      <RouterLink to="/shikikakuijou" class="p-listItem">
-        <ListItem :image="getImageUrl('02-01.png')" title="色覚異常"></ListItem>
-      </RouterLink>
-      <RouterLink to="/poster" class="p-listItem">
-        <ListItem
-          :image="getImageUrl('03-01.png')"
-          title="映画ポスター"
-        ></ListItem>
-      </RouterLink>
-      <RouterLink to="/graphic" class="p-listItem">
-        <ListItem
-          :image="getImageUrl('04-01.png')"
-          title="グラフィック"
-        ></ListItem>
-      </RouterLink>
-      <RouterLink to="/lp" class="p-listItem">
-        <ListItem
-          :image="getImageUrl('05-01.png')"
-          title="動物病院LP"
-        ></ListItem>
-      </RouterLink>
-    </div>
-    <About></About>
-  </section>
+    <section class="l-content">
+      <h2>works</h2>
+      <div class="p-list">
+        <RouterLink to="/web" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('01-01.png')"
+            title="紙面ビューアーWEBアプリ"
+          ></ListItem
+        ></RouterLink>
+        <RouterLink to="/shikikakuijou" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('02-01.png')"
+            title="色覚異常"
+          ></ListItem>
+        </RouterLink>
+        <RouterLink to="/poster" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('03-01.png')"
+            title="映画ポスター"
+          ></ListItem>
+        </RouterLink>
+        <RouterLink to="/graphic" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('04-01.png')"
+            title="グラフィック"
+          ></ListItem>
+        </RouterLink>
+        <RouterLink to="/lp" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('05-01.png')"
+            title="動物病院LP"
+          ></ListItem>
+        </RouterLink>
+      </div>
+      <About></About>
+    </section>
+  </div>
 </template>
 
 <script>

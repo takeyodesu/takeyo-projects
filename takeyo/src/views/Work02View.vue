@@ -1,5 +1,5 @@
 <template>
-  <div class="p-work">
+  <div class="p-work l-content">
     <h1>色覚異常 instagram</h1>
     <p class="p-workText">
       2019年学生時代制作課題<br />

@@ -1,6 +1,6 @@
 <template>
-  <div class="p-work">
-    <h1>大手新聞社 WEBアプリリニューアル</h1>
+  <div class="p-work l-content">
+    <h1>大手新聞社 紙面ビューアー WEBアプリケーション</h1>
     <p class="p-workText">
       常駐期間2022年2月〜<br />
       大手新聞社のリニューアル案件。

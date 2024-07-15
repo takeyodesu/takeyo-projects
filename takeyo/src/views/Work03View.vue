@@ -1,5 +1,5 @@
 <template>
-  <div class="p-work">
+  <div class="p-work l-content">
     <h1>映画ポスター</h1>
     <p class="p-workText">
       2019年制作物 二人体制の共同作品<br />

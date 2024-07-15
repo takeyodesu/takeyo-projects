@@ -4,9 +4,6 @@
 
 .p-work {
   padding-top: 80px;
-  @include module.mixin-mq(pc) {
-    padding-top: 0;
-  }
 }
 .p-workImage img {
   width: 100%;

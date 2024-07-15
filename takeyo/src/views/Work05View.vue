@@ -1,5 +1,5 @@
 <template>
-  <div class="p-work">
+  <div class="p-work l-content">
     <h1>動物病院移転LP</h1>
     <p class="p-workText">
       2021年作成。掲載期間は移転前後の約1〜2ヶ月。<br />

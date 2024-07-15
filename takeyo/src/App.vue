@@ -20,9 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="l-content">
-      <RouterView />
-    </div>
+    <RouterView />
   </main>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-work">
+  <div class="p-work l-content">
     <h1>グラフィック</h1>
     <p class="p-workText">バナー、ロゴ、印刷物などのグラフィック制作</p>
     <div class="p-workImage">
