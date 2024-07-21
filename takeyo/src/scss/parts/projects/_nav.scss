@@ -7,6 +7,7 @@
   right: 0;
   display: block;
   overflow-x: scroll;
+  z-index: 1;
   @include module.mixin-mq(pc) {
   }
   .p-navBtnOpen {

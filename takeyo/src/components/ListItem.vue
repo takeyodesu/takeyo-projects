@@ -1,7 +1,8 @@
 <template>
-  <img :src="image" alt="" />
-
-  <div class="p-listItem__title">{{ title }}</div>
+  <div>
+    <img :src="image" alt="" />
+    <div class="p-listItem__title">{{ title }}</div>
+  </div>
 </template>
 
 <script>

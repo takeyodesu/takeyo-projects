@@ -1,0 +1,57 @@
+@use '../foundation/module';
+@use '../foundation/mixin';
+
+[data-scroll-animation] {
+  display: block;
+  inline-size: fit-content;
+  margin-inline: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  [data-scroll-animation] {
+    transition-property: var(--property);
+    transition-timing-function: var(--easing);
+
+    &[data-animated="true"]:not(:focus-within) {
+      transition-duration: var(--duration);
+    }
+  }
+}
+/* ======================================================
+// Clip
+// ------------------------------------------------------ */
+
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  [data-scroll-animation|="clip"] {
+    --property: clip-path;
+    --easing: cubic-bezier(0.19, 1, 0.22, 1);
+    --duration: 1s;
+    --stating-path: inset(0 100% 0 0);
+    --end-path: inset(0 0 0 0);
+
+    &:not([data-animated="true"]) {
+      clip-path: var(--stating-path);
+    }
+
+    &[data-animated="true"] {
+      clip-path: var(--end-path);
+    }
+  }
+}
+.target-desu {
+  transition: opacity 1s ease, visibility 1s ease;
+  &[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.u-head {
+  font-size: 40px;
+  margin: 80px 0 160px;
+  color: red;
+}

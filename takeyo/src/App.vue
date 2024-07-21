@@ -26,7 +26,7 @@
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 
 export default {
   name: "TopIndex",
@@ -35,12 +35,12 @@ export default {
     RouterView,
   },
   setup() {
-    const showOpenNav = ref(false);
-
+    //image読み込み
     const getImageUrl = (name) => {
       return new URL(`./images/${name}`, import.meta.url).href;
     };
-
+    //HamNav開閉
+    const showOpenNav = ref(false);
     const eventClickOpenNav = () => {
       //true,falseを切り替え
       showOpenNav.value = !showOpenNav.value;
@@ -48,7 +48,6 @@ export default {
     const closeNav = () => {
       showOpenNav.value = false;
     };
-
     return {
       showOpenNav,
       getImageUrl,

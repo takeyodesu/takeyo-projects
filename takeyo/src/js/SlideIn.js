@@ -1,8 +1,7 @@
-// オプション型の定義
 const defaultOptions = {
   root: null,
   rootMargin: "0px",
-  threshold: 0,
+  threshold: 0.1,
 };
 
 const initializeObserveAnimation = (targets, options = {}) => {
@@ -12,10 +11,14 @@ const initializeObserveAnimation = (targets, options = {}) => {
     console.error("initializeObserveAnimation: Target elements are not found.");
     return;
   }
+  console.log(`initializeObserveAnimation: Found ${targetsLength} target(s).`);
 
   const mergedOptions = { ...defaultOptions, ...options };
   const observer = createObserver(mergedOptions, targetsLength);
-  targets.forEach((target) => observer.observe(target));
+  targets.forEach((target) => {
+    console.log("Observing target:", target);
+    observer.observe(target);
+  });
 };
 
 const createObserver = (options, targetsLength) => {
@@ -25,31 +28,21 @@ const createObserver = (options, targetsLength) => {
   const handleObserve = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // 要素が画面内に入ったら`data-animated`の値を`true`にする
+        console.log(`Element ${entry.target} is intersecting.`);
         entry.target.setAttribute("data-animated", "true");
-        // アニメーションした要素は監視をやめる
+        console.log(`Element ${entry.target} set data-animated to true.`);
         observer.unobserve(entry.target);
         activeCount++;
       }
     });
 
     if (activeCount === targetsLength) {
-      //すべての要素の監視停止
       observer.disconnect();
     }
   };
-  //API使用
+
   observer = new IntersectionObserver(handleObserve, options);
   return observer;
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  const targetElements = document.querySelectorAll("[data-scroll-animation]");
-
-  const options = {
-    rootMargin: "10% 0px",
-    threshold: 0.5,
-  };
-
-  initializeObserveAnimation(targetElements, options);
-});
+export { initializeObserveAnimation };

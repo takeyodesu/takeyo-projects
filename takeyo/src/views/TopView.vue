@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="p-mv u-sp">
+    <div data-scroll-animation="clip" class="p-mv u-sp">
       <img :src="getImageUrl('800x800.png')" />
     </div>
     <section class="l-content">
-      <h2>works</h2>
+      <div data-scroll-animation="clip" class="TARGET-DESU">
+        <h2 class="u-head">Projects</h2>
+      </div>
       <div class="p-list">
         <RouterLink to="/web" class="p-listItem">
           <ListItem
@@ -46,8 +48,9 @@
 import { RouterLink, RouterView } from "vue-router";
 import ListItem from "../components/ListItem.vue";
 import About from "../components/About.vue";
+import { ref, computed, onMounted } from "vue";
+import { initializeObserveAnimation } from "../js/SlideIn";
 
-import { ref, computed } from "vue";
 export default {
   name: "TopIndex",
   components: {
@@ -60,6 +63,22 @@ export default {
         return new URL(`../images/${name}`, import.meta.url).href;
       };
     },
+  },
+  setup() {
+    onMounted(() => {
+      const targetElements = document.querySelectorAll(
+        "[data-scroll-animation]"
+      );
+      console.log("targetElements in TopView:", targetElements);
+
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      initializeObserveAnimation(targetElements, options);
+    });
   },
 };
 </script>
