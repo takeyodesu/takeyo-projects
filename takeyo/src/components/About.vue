@@ -9,7 +9,7 @@
         <p class="p-aboutContentText">
           竹内<br />
           デザインとフロントエンドがんばります。<br />
-          ドラム練習中。いまは16ビートしか叩けません。<br />
+          ドラム練習中。<br />
           このtakeyo-projectsは、docker/nginx/vite/vue-routerを使用して作成しました。
         </p>
       </div>

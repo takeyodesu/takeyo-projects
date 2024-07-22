@@ -3,14 +3,19 @@
 @use '../foundation/mixin';
 
 .p-work {
-  padding-top: 80px;
-}
-.p-workImage img {
-  width: 100%;
-  max-width: 640px;
-  pointer-events: none;
-}
-.p-workText {
-  font-size: 16px;
-  line-height: 1.7;
+  h1,
+  h4 {
+    margin-bottom: 16px;
+  }
+  .p-workImage img {
+    width: 100%;
+    max-width: 640px;
+    pointer-events: none;
+    margin-bottom: 16px;
+  }
+  .p-workText {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
 }

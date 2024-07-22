@@ -1,10 +1,7 @@
 <template>
   <div>
-    <div class="p-mv u-sp">
-      <img :src="getImageUrl('800x800.png')" />
-    </div>
     <section class="l-content">
-      <h2>works</h2>
+      <h2 class="p-list-head">works</h2>
       <div class="p-list">
         <RouterLink to="/web" class="p-listItem">
           <ListItem

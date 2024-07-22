@@ -11,7 +11,7 @@ body {
 }
 .l-content {
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 80px 16px;
   @include module.mixin-mq(pc) {
     max-width: 1200px;
     padding: 40px 40px 0;
