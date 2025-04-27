@@ -1,9 +1,22 @@
 <template>
   <div>
     <section class="l-content">
+      <About></About>
       <h2 class="p-list-head">works</h2>
       <div class="p-list">
-        <RouterLink to="/web" class="p-listItem">
+        <RouterLink to="/creator-tools" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('06-01.png')"
+            title="ホロアース クリエイターツールズ"
+          ></ListItem
+        ></RouterLink>
+        <RouterLink to="/creator-lp" class="p-listItem">
+          <ListItem
+            :image="getImageUrl('07-01.png')"
+            title="クリエイターツールズLP"
+          ></ListItem
+        ></RouterLink>
+        <RouterLink to="/newspaper" class="p-listItem">
           <ListItem
             :image="getImageUrl('01-01.png')"
             title="紙面ビューアーWEBアプリ"
@@ -27,14 +40,13 @@
             title="グラフィック"
           ></ListItem>
         </RouterLink>
-        <RouterLink to="/lp" class="p-listItem">
+        <RouterLink to="/animal-hospital" class="p-listItem">
           <ListItem
             :image="getImageUrl('05-01.png')"
             title="動物病院LP"
           ></ListItem>
         </RouterLink>
       </div>
-      <About></About>
     </section>
   </div>
 </template>

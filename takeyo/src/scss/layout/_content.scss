@@ -3,13 +3,13 @@
 @use '../foundation/mixin';
 
 body {
-  background-color: module.$White;
   font-family: -apple-system, BlinkMacSystemFont, Roboto,
     Segoe UliHelvetica Neue, HelveticaNeue, Hiragino Kaku Gothic ProN,
     BIZ UDGothic, YuGothic, Yu Gothic Medium, Yu Gothic, Verdana, Meiryo,
     sans-serif;
 }
 .l-content {
+  background-color: module.$White;
   margin: 0 auto;
   padding: 80px 16px;
   @include module.mixin-mq(pc) {

@@ -10,8 +10,8 @@ const router = createRouter({
       component: TopView,
     },
     {
-      path: "/web",
-      name: "web",
+      path: "/newspaper",
+      name: "newspaper",
       component: () => import("../views/Work01View.vue"),
     },
     {
@@ -30,9 +30,19 @@ const router = createRouter({
       component: () => import("../views/Work04View.vue"),
     },
     {
-      path: "/lp",
-      name: "lp",
+      path: "/animal-hospital",
+      name: "aanimal-hospital",
       component: () => import("../views/Work05View.vue"),
+    },
+    {
+      path: "/creator-tools",
+      name: "creator-tools",
+      component: () => import("../views/Work06View.vue"),
+    },
+    {
+      path: "/creator-lp",
+      name: "creator-lp",
+      component: () => import("../views/Work07View.vue"),
     },
   ],
 });

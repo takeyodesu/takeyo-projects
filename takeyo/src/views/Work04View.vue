@@ -18,6 +18,15 @@
     <div class="p-workImage">
       <img :src="getImageUrl('04-05.png')" alt="" />
     </div>
+    <div class="p-workImage">
+      <img :src="getImageUrl('04-06.png')" alt="" />
+    </div>
+    <div class="p-workImage">
+      <img :src="getImageUrl('04-07.png')" alt="" />
+    </div>
+    <div class="p-workImage">
+      <img :src="getImageUrl('04-08.png')" alt="" />
+    </div>
   </div>
 </template>
 

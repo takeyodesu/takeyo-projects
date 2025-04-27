@@ -3,13 +3,16 @@
 
 .p-about {
   background-color: module.$LightGray;
+  margin-bottom: 40px;
 }
 .p-about__inner {
   padding: 40px 16px;
   margin: auto;
+  text-align: center;
   @include module.mixin-mq(pc) {
     max-width: 1200px;
     padding: 40px 40px;
+    text-align: start;
   }
   & h2 {
     margin-bottom: 24px;
@@ -20,15 +23,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
   @include module.mixin-mq(pc) {
     justify-content: flex-start;
+    gap: 0;
   }
   & .p-aboutContentText {
     line-height: 1.6;
   }
 }
 .p-aboutContentImage {
-  width: 240px;
+  width: 160px;
   & img {
     width: 100%;
   }

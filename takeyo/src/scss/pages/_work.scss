@@ -18,4 +18,24 @@
     line-height: 1.7;
     margin-bottom: 16px;
   }
+  .p-workBlank {
+    display: inline-block;
+    margin-bottom: 16px;
+    position: relative;
+    & a {
+      color: module.$Black;
+      text-decoration: none;
+    }
+    & ::after {
+      content: ""; /* 擬似要素の中身を空にする */
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent; /* 上の辺を透明 */
+      border-bottom: 8px solid transparent; /* 下の辺を透明 */
+      border-left: 15px solid module.$Black; /* 右向きの三角形 */
+    }
+  }
 }
