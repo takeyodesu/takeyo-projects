@@ -65,6 +65,16 @@
           ></ListItem>
         </RouterLink>
         <RouterLink
+          to="/game-color-picker"
+          class="p-listItem"
+          data-scroll-animation="clip"
+        >
+          <ListItem
+            :image="getImageUrl('08-01.png')"
+            title="GameColorPicker"
+          ></ListItem>
+        </RouterLink>
+        <RouterLink
           to="/animal-hospital"
           class="p-listItem"
           data-scroll-animation="clip"

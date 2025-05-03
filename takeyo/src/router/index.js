@@ -44,6 +44,11 @@ const router = createRouter({
       name: "creator-lp",
       component: () => import("../views/Work07View.vue"),
     },
+    {
+      path: "/game-color-picker",
+      name: "game-color-picker",
+      component: () => import("../views/Work08View.vue"),
+    },
   ],
 });
 

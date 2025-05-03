@@ -27,6 +27,9 @@
             <RouterLink to="/graphic" @click="closeNav"
               >グラフィック</RouterLink
             >
+            <RouterLink to="/game-color-picker" @click="closeNav"
+              >GameColorPicker</RouterLink
+            >
             <RouterLink to="/animal-hospital" @click="closeNav"
               >動物病院LP</RouterLink
             >
@@ -35,18 +38,21 @@
       </transition>
     </div>
     <RouterView />
+    <Footer />
   </main>
 </template>
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
 import { ref, computed } from "vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "TopIndex",
   components: {
     RouterLink,
     RouterView,
+    Footer,
   },
   setup() {
     const showOpenNav = ref(false);

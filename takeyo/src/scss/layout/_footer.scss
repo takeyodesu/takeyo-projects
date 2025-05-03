@@ -1,0 +1,12 @@
+@charset "utf-8";
+@use '../foundation/module';
+@use '../foundation/mixin';
+
+.l-footer {
+  text-align: center;
+  padding: 16px 0;
+  & small {
+    font-size: 24px;
+    color: module.$Gray;
+  }
+}
