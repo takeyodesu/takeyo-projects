@@ -4,31 +4,35 @@
       <div v-if="!showOpenNav" class="p-navBtnOpen" @click="eventClickOpenNav">
         <img :src="getImageUrl('IconHamMenuWhite.svg')" />
       </div>
-      <div v-if="showOpenNav" class="p-nav">
-        <div @click="closeNav" class="p-navBtnClose">
-          <img :src="getImageUrl('IconCloseWhite.svg')" />
+      <transition name="slide-nav">
+        <div v-if="showOpenNav" class="p-nav">
+          <div @click="closeNav" class="p-navBtnClose">
+            <img :src="getImageUrl('IconCloseWhite.svg')" />
+          </div>
+          <div class="p-navList">
+            <RouterLink to="/" @click="closeNav">TOP</RouterLink>
+            <RouterLink to="/creator-tools" @click="closeNav"
+              >クリエイターツールズ</RouterLink
+            >
+            <RouterLink to="/creator-lp" @click="closeNav"
+              >クリエイターLP</RouterLink
+            >
+            <RouterLink to="/newspaper" @click="closeNav"
+              >紙面ビューアー</RouterLink
+            >
+            <RouterLink to="/shikikakuijou" @click="closeNav"
+              >色覚異常</RouterLink
+            >
+            <RouterLink to="/poster" @click="closeNav">映画ポスター</RouterLink>
+            <RouterLink to="/graphic" @click="closeNav"
+              >グラフィック</RouterLink
+            >
+            <RouterLink to="/animal-hospital" @click="closeNav"
+              >動物病院LP</RouterLink
+            >
+          </div>
         </div>
-        <div class="p-navList">
-          <RouterLink to="/" @click="closeNav">TOP</RouterLink>
-          <RouterLink to="/creator-tools" @click="closeNav"
-            >クリエイターツールズ</RouterLink
-          >
-          <RouterLink to="/creator-lp" @click="closeNav"
-            >クリエイターLP</RouterLink
-          >
-          <RouterLink to="/newspaper" @click="closeNav"
-            >紙面ビューアー</RouterLink
-          >
-          <RouterLink to="/shikikakuijou" @click="closeNav"
-            >色覚異常</RouterLink
-          >
-          <RouterLink to="/poster" @click="closeNav">映画ポスター</RouterLink>
-          <RouterLink to="/graphic" @click="closeNav">グラフィック</RouterLink>
-          <RouterLink to="/animal-hospital" @click="closeNav"
-            >動物病院LP</RouterLink
-          >
-        </div>
-      </div>
+      </transition>
     </div>
     <RouterView />
   </main>
@@ -53,7 +57,7 @@ export default {
 
     const eventClickOpenNav = () => {
       //true,falseを切り替え
-      showOpenNav.value = !showOpenNav.value;
+      showOpenNav.value = true;
     };
     const closeNav = () => {
       showOpenNav.value = false;
@@ -68,3 +72,22 @@ export default {
   },
 };
 </script>
+<style scoped>
+/* slide-nav transition */
+.slide-nav-enter-from,
+.slide-nav-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-nav-enter-active,
+.slide-nav-leave-active {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.slide-nav-enter-to,
+.slide-nav-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+</style>
