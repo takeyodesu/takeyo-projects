@@ -9,7 +9,7 @@ body {
     sans-serif;
 }
 .l-content {
-  background-color: module.$White;
+  background: linear-gradient(45deg, module.$LightGray, module.$White);
   margin: 0 auto;
   padding: 80px 16px;
   @include module.mixin-mq(pc) {

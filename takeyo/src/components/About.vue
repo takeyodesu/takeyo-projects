@@ -6,7 +6,7 @@
           <img :src="getImageUrl('about-image.png')" alt="" />
         </div>
         <p class="p-aboutContentText">
-          竹内<br />
+        <h2>竹内</h2>
           WEBとかアプリとか作るニート<br />
           デザインとフロントエンドがんばります。<br />
           このtakeyo-projectsは、docker,nginx,vite,vue-routerを使用して作成しました。

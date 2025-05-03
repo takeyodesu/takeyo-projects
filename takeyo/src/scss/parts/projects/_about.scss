@@ -3,7 +3,7 @@
 
 .p-about {
   background-color: module.$LightGray;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .p-about__inner {
   padding: 40px 16px;
@@ -13,9 +13,6 @@
     max-width: 1200px;
     padding: 40px 40px;
     text-align: start;
-  }
-  & h2 {
-    margin-bottom: 24px;
   }
 }
 
@@ -36,6 +33,7 @@
   width: 160px;
   & img {
     width: 100%;
+    box-shadow: 8px 8px 0 module.$Accent;
   }
   @include module.mixin-mq(pc) {
     margin-right: 24px;

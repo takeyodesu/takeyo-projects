@@ -35,6 +35,7 @@
     object-fit: cover;
     pointer-events: none;
     margin-bottom: 16px;
+    box-shadow: 40px 40px 0 module.$Accent;
     @include module.mixin-mq(pc) {
       height: 160px;
     }
@@ -44,7 +45,9 @@
   display: inline-block;
   font-size: 24px;
   font-weight: bold;
-  color: module.$Black;
+  color: module.$White;
+  background: module.$Black;
+  padding: 8px;
   @include module.mixin-mq(pc) {
     font-size: 16px;
   }

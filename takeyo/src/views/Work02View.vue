@@ -4,8 +4,16 @@
     <p class="p-workText">
       2019年学生時代制作課題<br />
       色覚異常を体験することができるフィルターを作成した。<br />
-      instagram -> @shikikakuijou
     </p>
+    <div class="p-workBlank">
+      <a
+        href="https://www.instagram.com/shikikakuijou"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @shikikakuijouをみる
+      </a>
+    </div>
     <div class="p-workImage">
       <img :src="getImageUrl('02-01.png')" alt="" />
     </div>
