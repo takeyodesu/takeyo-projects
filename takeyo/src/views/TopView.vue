@@ -5,6 +5,16 @@
       <h2 class="p-list-head" data-scroll-animation="clip">works</h2>
       <div class="p-list">
         <RouterLink
+          to="/holoearth-shop"
+          class="p-listItem"
+          data-scroll-animation="clip"
+        >
+          <ListItem
+            :image="getImageUrl('09-01.png')"
+            title="ホロアースWEBショップ"
+          ></ListItem
+        ></RouterLink>
+        <RouterLink
           to="/creator-tools"
           class="p-listItem"
           data-scroll-animation="clip"
@@ -21,7 +31,7 @@
         >
           <ListItem
             :image="getImageUrl('07-01.png')"
-            title="クリエイターツールズLP"
+            title="マーケットプレイスLP"
           ></ListItem
         ></RouterLink>
         <RouterLink
@@ -30,7 +40,7 @@
           data-scroll-animation="clip"
         >
           <ListItem
-            :image="getImageUrl('01-01.png')"
+            :image="getImageUrl('01-03.png')"
             title="紙面ビューアーWEBアプリ"
           ></ListItem
         ></RouterLink>
@@ -62,16 +72,6 @@
           <ListItem
             :image="getImageUrl('04-01.png')"
             title="グラフィック"
-          ></ListItem>
-        </RouterLink>
-        <RouterLink
-          to="/game-color-picker"
-          class="p-listItem"
-          data-scroll-animation="clip"
-        >
-          <ListItem
-            :image="getImageUrl('08-01.png')"
-            title="GameColorPicker"
           ></ListItem>
         </RouterLink>
         <RouterLink

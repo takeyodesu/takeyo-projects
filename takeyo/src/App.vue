@@ -11,11 +11,14 @@
           </div>
           <div class="p-navList">
             <RouterLink to="/" @click="closeNav">TOP</RouterLink>
+            <RouterLink to="/holoearth-shop" @click="closeNav"
+              >ホロアースWEBショップ</RouterLink
+            >
             <RouterLink to="/creator-tools" @click="closeNav"
               >クリエイターツールズ</RouterLink
             >
             <RouterLink to="/creator-lp" @click="closeNav"
-              >クリエイターLP</RouterLink
+              >マーケットプレイスLP</RouterLink
             >
             <RouterLink to="/newspaper" @click="closeNav"
               >紙面ビューアー</RouterLink
@@ -26,9 +29,6 @@
             <RouterLink to="/poster" @click="closeNav">映画ポスター</RouterLink>
             <RouterLink to="/graphic" @click="closeNav"
               >グラフィック</RouterLink
-            >
-            <RouterLink to="/game-color-picker" @click="closeNav"
-              >GameColorPicker</RouterLink
             >
             <RouterLink to="/animal-hospital" @click="closeNav"
               >動物病院LP</RouterLink

@@ -18,7 +18,6 @@
     </div>
     <p class="p-workText">
       類似サービスを参考にクリエイターが活躍できるツールとして制作した。<br />
-      2025年4月リリース後の追加機能や、レスポンシブ対応は絶賛開発中。
     </p>
     <div class="p-workImage">
       <img :src="getImageUrl('06-03.png')" alt="" />

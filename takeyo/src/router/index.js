@@ -49,6 +49,11 @@ const router = createRouter({
       name: "game-color-picker",
       component: () => import("../views/Work08View.vue"),
     },
+    {
+      path: "/holoearth-shop",
+      name: "holoearth-shop",
+      component: () => import("../views/Work09View.vue"),
+    },
   ],
 });
 

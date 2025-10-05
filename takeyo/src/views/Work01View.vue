@@ -7,7 +7,7 @@
       社内管理システムなどの計9プロジェクトにUI/UXデザイナーとして参画した。（2022年2月〜2024年1月）
     </p>
     <div class="p-workImage">
-      <img :src="getImageUrl('01-01.png')" alt="" />
+      <img :src="getImageUrl('01-03.png')" alt="" />
     </div>
     <p class="p-workText">
       設計の段階から参加し要望を聞き入れ、 競合他社/類似サービスの調査や、
@@ -18,7 +18,7 @@
       その他、販促物などのグラフィック業務や フロントエンド開発にも携わった。
     </p>
     <div class="p-workImage">
-      <img :src="getImageUrl('01-02.png')" alt="" />
+      <img :src="getImageUrl('01-01.png')" alt="" />
     </div>
     <h4>デザイン制作</h4>
     <p class="p-workText">
@@ -32,6 +32,9 @@
       のWEBアクセシビリティ義務化対応についてmiCheckerを導入し「JIS X
       8341-3:2016」規格において、AAAを達成した。
     </p>
+    <div class="p-workImage">
+      <img :src="getImageUrl('01-02.png')" alt="" />
+    </div>
   </div>
 </template>
 

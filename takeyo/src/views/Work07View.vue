@@ -1,6 +1,6 @@
 <template>
   <div class="p-work l-content">
-    <h1>クリエイターツールズLP</h1>
+    <h1>マーケットプレイスLP</h1>
     <p class="p-workText">ホロアース クリエイターサービスPR用LP<br /></p>
     <p class="p-workText">
       構成やビジュアルのディレクション、デザインまで担当した。
