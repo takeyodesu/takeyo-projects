@@ -5,12 +5,40 @@
         <div class="p-aboutContentImage">
           <img :src="getImageUrl('about-image.png')" alt="" />
         </div>
-        <p class="p-aboutContentText">
-        <h2>竹内</h2>
+        <div class="p-aboutContentText">
+          <h2>竹内</h2>
           WEBとかアプリとか作るニート<br />
           デザインとフロントエンドがんばります。<br />
-          このtakeyo-projectsは、docker,nginx,vite,vue-routerを使用して作成しました。
-        </p>
+          このページは、vite,vue-routerを使用して作成しました。
+          <div class="p-aboutContentSns">
+            <div class="p-aboutContentSnsItem">
+              <a
+                href="https://x.com/takeyodesu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  :src="getImageUrl('x-white.png')"
+                  alt="X (旧Twitter)"
+                  style="width: 24px; height: 24px"
+                />
+              </a>
+            </div>
+            <div class="p-aboutContentSnsItem">
+              <a
+                href="https://www.instagram.com/takeyodesu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  :src="getImageUrl('ig-white.png')"
+                  alt="instagram"
+                  style="width: 24px; height: 24px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

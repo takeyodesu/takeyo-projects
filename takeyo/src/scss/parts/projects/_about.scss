@@ -39,3 +39,28 @@
     margin-right: 24px;
   }
 }
+.p-aboutContentText {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.p-aboutContentSns {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  @include module.mixin-mq(pc) {
+    justify-content: flex-start;
+  }
+  & .p-aboutContentSnsItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: module.$Black;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    & a {
+      height: 24px;
+    }
+  }
+}

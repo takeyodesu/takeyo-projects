@@ -5,16 +5,6 @@
       <h2 class="p-list-head" data-scroll-animation="clip">works</h2>
       <div class="p-list">
         <RouterLink
-          to="/holoearth-shop"
-          class="p-listItem"
-          data-scroll-animation="clip"
-        >
-          <ListItem
-            :image="getImageUrl('09-01.png')"
-            title="ホロアースWEBショップ"
-          ></ListItem
-        ></RouterLink>
-        <RouterLink
           to="/creator-tools"
           class="p-listItem"
           data-scroll-animation="clip"
@@ -35,6 +25,16 @@
           ></ListItem
         ></RouterLink>
         <RouterLink
+          to="/holoearth-shop"
+          class="p-listItem"
+          data-scroll-animation="clip"
+        >
+          <ListItem
+            :image="getImageUrl('09-01.png')"
+            title="ホロアースWEBショップ"
+          ></ListItem
+        ></RouterLink>
+        <RouterLink
           to="/newspaper"
           class="p-listItem"
           data-scroll-animation="clip"
@@ -44,6 +44,16 @@
             title="紙面ビューアーWEBアプリ"
           ></ListItem
         ></RouterLink>
+        <RouterLink
+          to="/graphic"
+          class="p-listItem"
+          data-scroll-animation="clip"
+        >
+          <ListItem
+            :image="getImageUrl('04-10.png')"
+            title="グラフィック"
+          ></ListItem>
+        </RouterLink>
         <RouterLink
           to="/shikikakuijou"
           class="p-listItem"
@@ -62,26 +72,6 @@
           <ListItem
             :image="getImageUrl('03-01.png')"
             title="映画ポスター"
-          ></ListItem>
-        </RouterLink>
-        <RouterLink
-          to="/graphic"
-          class="p-listItem"
-          data-scroll-animation="clip"
-        >
-          <ListItem
-            :image="getImageUrl('04-01.png')"
-            title="グラフィック"
-          ></ListItem>
-        </RouterLink>
-        <RouterLink
-          to="/animal-hospital"
-          class="p-listItem"
-          data-scroll-animation="clip"
-        >
-          <ListItem
-            :image="getImageUrl('05-01.png')"
-            title="動物病院LP"
           ></ListItem>
         </RouterLink>
       </div>

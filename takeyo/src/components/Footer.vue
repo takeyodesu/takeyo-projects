@@ -1,5 +1,7 @@
 <template>
   <div class="l-footer">
+    <p>より詳細な資料もございます。ご希望の方はお気軽にご連絡ください。</p>
+    <p>takeyodesu@gmail.com</p>
     <small>&copy; 2025 takeyodesu. All Rights Reserved.</small>
   </div>
 </template>
