@@ -34,8 +34,9 @@
     height: 300px;
     object-fit: cover;
     pointer-events: none;
-    margin-bottom: 16px;
+    margin-bottom: -16px;
     box-shadow: 40px 40px 0 module.$Accent;
+    border: 2px solid module.$Black;
     @include module.mixin-mq(pc) {
       height: 160px;
     }

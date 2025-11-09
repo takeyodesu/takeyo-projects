@@ -32,6 +32,7 @@
 .p-aboutContentImage {
   width: 160px;
   & img {
+    border: 2px solid module.$Black;
     width: 100%;
     box-shadow: 8px 8px 0 module.$Accent;
   }
